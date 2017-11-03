@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "CC / Chart";
+    ViewBag.ActivePage = "Chart";
+}
+@section Styles {
+    <link href="@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.6.3/rickshaw.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("/Styles/chart.css")" rel="stylesheet" type="text/css" />
+}
+@section Scripts {
+    <script src="@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js")" crossorigin="anonymous"></script>
+<!--    <script src="@Url.Content("/Scripts/libs/d3.layout.js")" crossorigin="anonymous"></script>-->
+    <script src="@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.6.3/rickshaw.js")" crossorigin="anonymous"></script>
+    <script src="@Url.Content("/Scripts/chart.js")" crossorigin="anonymous"></script>
+}
+<h1>Let's see some historical data!</h1>
+<hr />
+
+<p>Pick your currency. You can select more by clicking the ticks in the legend.</p>
+
+
+<h4 class="text-center">Currency / EUR fx rates</h4>
+
+<div id="chart_container">
+    <div id="legend_container">
+        <div id="legend"></div>
+    </div>
+    <div id="chart"></div>
+</div>
+

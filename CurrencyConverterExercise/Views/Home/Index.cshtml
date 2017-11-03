@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "CC / Converter";
+    ViewBag.ActivePage = "Index";
+}
+@section Scripts {
+    <script src="@Url.Content("/Scripts/calc.js")" crossorigin="anonymous"></script>
+}
+<h1>Ready to convert some money?</h1>
+<hr />
+<form class="form-horizontal" data-toggle="validator" id="calculatorForm">
+    <div class="col col-xs-2 col-xs-offset-2">
+		<div class="form-group has-warning">
+            <input id="fromAmount" type="number" class="form-control text-right" value="1" />
+		</div>
+    </div>
+    <div class="col col-xs-1 no-gutters">
+        <select id="fromCurrency"  class="selectpicker currency-selector col-xs-auto" data-live-search="true">
+            <option value="" disabled="">...</option>
+        </select>
+    </div>
+    <label class="control-label col-xs-1">equals to</label>
+    <div class="col col-xs-2">
+		<input id="toAmount" disabled="" class="form-control form-control-static text-right" />
+    </div>
+    <div class="col col-xs-1">
+        <select id="toCurrency" class="selectpicker currency-selector col-xs-auto" data-live-search="true">
+            <option value="" disabled="">...</option>
+        </select>
+    </div>
+	<div class="col col-xs-2">
+	<button type="button" class="btn btn=primary btn-md btn-primary" id="updateBtn"
+		data-loading-text="<i class='fa fa-spinner fa-spin '></i> Calculating"><i class="fa fa-calculator"></i> Calculate</button>
+	</div>
+</form>

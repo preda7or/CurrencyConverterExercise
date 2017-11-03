@@ -1,0 +1,86 @@
+﻿div,
+span,
+p,
+td {
+    font-family: Arial, sans-serif;
+}
+
+.container #chart_container {
+    display: block;
+    position: relative;
+}
+
+#content {
+    width: 1200px;
+}
+
+#chart {
+    display: block;
+    float:left;
+}
+
+#chart path {
+    -webkit-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}
+
+#preview {
+    margin-top: 10px;
+}
+
+#legend_container {
+    display: block;
+    float:left;
+    margin: 0 0 0 20px;
+    right: 0;
+}
+
+#legend a {
+    font-size: 14px;
+}
+
+#legend a:hover {
+    text-decoration: none;
+}
+
+/* #legend_container {
+    position: absolute;
+    right: 0;
+    bottom: 26px;
+    width: 0;
+} */
+
+#chart_container {
+    position: relative;
+    display: inline-block;
+}
+
+#chart {
+    border: 1px solid #f0f0f0;
+}
+
+#legend {
+    background-color: white;
+    margin-left: 0;
+    padding: 0;
+    left: 0;
+}
+
+#legend .label {
+    color: black;
+}
+
+#legend .action {
+    color: black;
+    opacity: 0.5;
+}
+
+#legend ul {
+    padding: 0;
+}
+
+label.disabled {
+    opacity: 0.4;
+}
